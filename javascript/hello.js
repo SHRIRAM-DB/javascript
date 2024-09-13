@@ -164,3 +164,18 @@ let s=5;
 let h=10;
 result=volume*r*r*h;
 console.log(result);*/
+
+let sentence = "She said, \"Hello!\"";
+let filePath = "C:\\Program Files\\MyApp";
+
+console.log(sentence);
+console.log(filePath);
+
+function add(n){
+    for(i=1;i<=n;i++){
+        if(i%2!==0){
+           console.log(i)
+        }
+    }
+}
+add(12)
