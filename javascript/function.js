@@ -212,21 +212,21 @@
 //         console.log(word);
 //         console.log(word.slice(0,-3));
 
-n=10;
-for(i=1;i<=n;i++)
-{
-    console.log(i+"laps")
-}
+// n=10;
+// for(i=1;i<=n;i++)
+// {
+//     console.log(i+"laps")
+// }
 
-function battery(n){
-for(i=100;i>n;){
-    console.log(i+"%")
-    i=i-5;
-     if(i==20){
-        console.log("Battery is low");
-}
-    }}
-    battery(20)
+// function battery(n){
+// for(i=100;i>n;){
+//     console.log(i+"%")
+//     i=i-5;
+//      if(i==20){
+//         console.log("Battery is low");
+// }
+//     }}
+//     battery(20)
     
 let x_position=0;
 let y_position=0;
@@ -250,40 +250,72 @@ function position(direction){
     }
     console.log(`${direction} move to (${x_position},${y_position})`)
 }
-position("North")
+position("West")
 
 
 
-for(i=1000;i>0;){
-    console.log(i);
-    i=i-10;
-    if(i==0){
-        console.log("flight arrived")
+// for(i=1000;i>0;){
+//     console.log(i);
+//     i=i-10;
+//     if(i==0){
+//         console.log("flight arrived")
+//     }
+// }
+
+// let ranway="ramnat"
+// switch(ranway){
+
+//     case"ramnat":
+//     console.log("ranway 1");
+//     break;
+
+//     case"thuthukdi":
+//     console.log("ranway 2");
+//     break;
+
+//     case "thinalveli":
+//     console.log("ranway 3");
+//     break;
+
+//     case "tenkasi":
+//     console.log("ranway 4");
+//     break;
+// }
+
+// let n=1000;
+// for(i=0;i<=n;){
+//     console.log(i)
+//     i=i+10;
+// }
+
+function calculateGrade(score) {
+    if (score >= 90) {
+        console.log("Grade: A");
+    } else if (score >= 80) {
+        console.log("Grade: B");
+    } else if (score >= 70) {
+        console.log("Grade: C");
+    } else if (score >= 60) {
+        console.log("Grade: D");
+    } else {
+        console.log("Grade: F");
+    }
+}
+calculateGrade(49)
+function isMultipleOfSeven(N) {
+    if (N % 7 == 0) { 
+        console.log("yes");
+    } else {
+        console.log("no");
     }
 }
 
-let ranway="ramnat"
-switch(ranway){
+// Example usage
+let N = 49;
+isMultipleOfSeven(N);
 
-    case"ramnat":
-    console.log("ranway 1");
-    break;
-
-    case"thuthukdi":
-    console.log("ranway 2");
-    break;
-
-    case "thinalveli":
-    console.log("ranway 3");
-    break;
-
-    case "tenkasi":
-    console.log("ranway 4");
-    break;
+function randomNumber(){
+    return Math.random();
 }
-
-let n=1000;
-for(i=0;i<=n;){
-    console.log(i)
-    i=i+10;
-}
+let random=randomNumber();
+console.log(random)
