@@ -165,7 +165,7 @@
 //             console.log("Tuesday");
 //         }
 //         else if(n==4){
-//             console.log("Wesnesday");
+//             console.log("Wednesday");
 //         }
 //         else if(n==5){
 //             console.log("Thursday");
@@ -218,15 +218,14 @@
 //     console.log(i+"laps")
 // }
 
-// function battery(n){
-// for(i=100;i>n;){
-//     console.log(i+"%")
-//     i=i-5;
-//      if(i==20){
-//         console.log("Battery is low");
-// }
-//     }}
-//     battery(20)
+function battery(n){
+for(i=100;i>n;i=i-5){
+    console.log(i+"%")
+     if(i==20){
+        console.log("Battery is low");
+}
+    }}
+ battery(20)
     
 let x_position=0;
 let y_position=0;
