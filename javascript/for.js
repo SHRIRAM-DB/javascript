@@ -99,4 +99,3 @@ for(i=0;i<average.length;i++){
     sum+=average[i]
 }
 console.log(Math.floor(sum/average.length));
-

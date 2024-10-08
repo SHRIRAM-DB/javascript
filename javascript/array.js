@@ -254,50 +254,50 @@
 
 // 1. Write a program to check if the character is a vowel, print "The character is a vowel." If the character is a consonant, print "The character is a consonant." Make sure to handle both upper and lower case letters. A vowel is a character which is any of letters a, e, i, o, u. Any letter which is a not a vowel is considered a consonant.
 
-let n="b";
-if(n=="a"||n=="A"||n=="e"||n=="E"||n=="i"||n=="I"||n=="o"||n=="O"||n=="u"||n=="U"){
-    console.log("The character is a vowel");
-}
-else{
-    console.log("The character is not a vowel")
-}
+// let n="b";
+// if(n=="a"||n=="A"||n=="e"||n=="E"||n=="i"||n=="I"||n=="o"||n=="O"||n=="u"||n=="U"){
+//     console.log("The character is a vowel");
+// }
+// else{
+//     console.log("The character is not a vowel")
+// }
 
 // 2. Given three numbers a, b, c print the maximum number amongst the three.
 
-let a=10;
-let b=20;
-let c=30;
-if(a>=b && a>=c){
-    console.log(a);
-}
-else if(b>=a && b>=c){
-    console.log(b);
-}
-else {
-    console.log(c);
-}
+// let a=10;
+// let b=20;
+// let c=30;
+// if(a>=b && a>=c){
+//     console.log(a);
+// }
+// else if(b>=a && b>=c){
+//     console.log(b);
+// }
+// else {
+//     console.log(c);
+// }
 
 // 3. Write a program to generate the following series 1, 3, 5, 7, 9, 11....up until the nth term if n = 4, print the first 4 odd numbers 1 3 5 7.
 
-let m=1
-n=4;
-for(i=1;i<=n;i++){
-    console.log(m);
-    m=m+2;
-}
+// let m=1
+// n=4;
+// for(i=1;i<=n;i++){
+//     console.log(m);
+//     m=m+2;
+// }
 
 // 4.If the initialDiscount is 5% and the dailyIncrease is 2%, the function should calculate the total discount over 10 days.
 
-n=10;
-let s=2;
-let sum=0;
-let initialDiscount=5
-for(i=1;i<=n;i++){
-   console.log("Day"+i+":"+initialDiscount+"%");
-   sum+=initialDiscount;
-   initialDiscount+=s;
-}
-console.log(sum+"%");
+// n=10;
+// let s=2;
+// let sum=0;
+// let initialDiscount=5
+// for(i=1;i<=n;i++){
+//    console.log("Day"+i+":"+initialDiscount+"%");
+//    sum+=initialDiscount;
+//    initialDiscount+=s;
+// }
+// console.log(sum+"%");
 
 
 
@@ -305,9 +305,19 @@ console.log(sum+"%");
 // 5.. Complete the program printAllMultiplesOf5Bet(a, b) 
 //  eg, printAllMultiplesOf5Bet(10, 30) in reverse
 
-function printAllMultiplesOf5Bet(a,b){
-    for(i=b;i>=a;i=i-5){
-       console.log(i);
+// function printAllMultiplesOf5Bet(a,b){
+//     for(i=b;i>=a;i=i-5){
+//        console.log(i);
+//     }
+// }
+// printAllMultiplesOf5Bet(10,30)
+
+let nam="ArumugaKani"
+count=0;
+for(i=0;i<nam.length;i++){
+    console.log(nam[i])
+    if(nam[i]=='a'||nam[i]=='e'||nam[i]=='i'||nam[i]=='o'||nam[i]=='u'||nam[i]=='A'||nam[i]=='E'||nam[i]=='I'||nam[i]=='O'||nam[i]=='U'){
+        count++;
     }
 }
-printAllMultiplesOf5Bet(10,30)
+console.log(count);
