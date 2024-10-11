@@ -25,20 +25,14 @@
 // let d=findLCM(22,89);
 // console.log(d);
 
-let a=1290;
-let b=60;
-for(i=2;i<=Math.min(a,b);i++){
-    if(a%i==0 && b%i==0){
- console.log(i)
-    }
-}
 
-a=1290;
-b=60;
-while(b!==0){
-   let temp=b;
-   b=a%b;
-   a=temp;
-}
-console.log(a);
 
+let array=[3,6,1,9,5]
+for(i=0;i<array.length;i++){
+   for(j=i+1;j<array.length;j++){
+      if(array[i]>array[j]){
+         [array[i],array[j]]=[array[j],array[i]]
+         console.log(array[i])
+      }
+   }
+}
