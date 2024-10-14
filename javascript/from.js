@@ -101,4 +101,3 @@ while(num>0){
 }
 console.log(reversenum)
 
-let small=["guna","shriramamamam"]
