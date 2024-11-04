@@ -1,14 +1,3 @@
-// function isPrime(num) {
-//     if(num>=0){
-//         return false;
-//     }
-
-//     for (let i = 2; i< Math.sqrt(num); i++) {
-//      if(i%)
-        
-//     }
-// }
-// isPrime(9)
 
 // function findLCM(a, b) {
 //     let lar = Math.max(a, b);

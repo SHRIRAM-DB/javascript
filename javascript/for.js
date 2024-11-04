@@ -57,15 +57,17 @@
 
 // 1. Given an array of integers find the number of multiples of 5.
 
-// let arr=[44,29,50,29,43];
-// count=0;
-//     for(let i=0;i<arr.length;i++){
-//         if(arr[i]%5==0){
-//             console.log(count);
-//     }
-//     count++;
-//     }
+let arr=[44,29,50,29,75];
+count=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%5==0){
+            console.log(count);
+    }
+    count++;
+    }
 
+   
+    
 // 2.Given an array of integers and 2 numbers a and b (a < b) count the number of elements in the array which are between a and b
 
 let integers=[80,43,6,14,23];
