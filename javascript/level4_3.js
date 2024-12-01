@@ -1,4 +1,24 @@
-let n=3;
+let n=6;
+
+for(i=n;i>0;i--){
+ let str="";
+ let st="";
+ let gap="";
+ for(j=i;j>0;j--){
+   str+=i+" ";
+ }
+ for(k=i;k>0;k--){
+   st+=i+" "
+ }
+ for(l=1;l<=n-i;l++){
+   gap+="    "
+ }
+ console.log(str+gap+st)
+}
+
+
+
+
 let m=(n*2)-2;
 for(i=1;i<=n;i++) {
   let str=""
@@ -12,12 +32,10 @@ for(i=1;i<=n;i++) {
     st+=i+" "
   }
   for(l=1;l<=m;l++){
-    gap+=" "
+    gap+="  "
   }
-  for(o=0;o<n-i;o++){
-     ga+="  "
-   }
- console.log(st.trim()+gap+ga+str)
+ 
+ console.log(st+gap+str)
  m=m-2;
 }
 

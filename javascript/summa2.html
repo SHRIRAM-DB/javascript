@@ -26,19 +26,18 @@
   </div>
 
   <script>
-    // Example movie data
     const movies = [
-      { id: 1, name: "Inception", image: "https://via.placeholder.com/300x400?text=Inception", description: "A mind-bending thriller." },
-      { id: 2, name: "Interstellar", image: "https://via.placeholder.com/300x400?text=Interstellar", description: "A journey to the stars." },
-      { id: 3, name: "Avatar", image: "https://via.placeholder.com/300x400?text=Avatar", description: "An epic on another planet." }
+      { thriller_id: 1, name: "Inception", image: "https://via.placeholder.com/300x400?text=Inception", description: "A mind-bending thriller." },
+      { thriller_id: 2, name: "Interstellar", image: "https://via.placeholder.com/300x400?text=Interstellar", description: "A journey to the stars." },
+      { thriller_id: 3, name: "Avatar", image: "https://via.placeholder.com/300x400?text=Avatar", description: "An epic on another planet." }
     ];
 
-    // Get movie ID from URL
+    // Get thriller_id from URL
     const params = new URLSearchParams(window.location.search);
-    const movieId = parseInt(params.get("id"));
+    const thrillerId = parseInt(params.get("thriller_id"));
 
-    // Find the movie by ID
-    const movie = movies.find((m) => m.id === movieId);
+    // Find the movie by thriller_id
+    const movie = movies.find(m => m.thriller_id === thrillerId);
 
     // Display movie details
     const movieDetails = document.getElementById("movieDetails");

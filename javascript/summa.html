@@ -3,57 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Page</title>
-  <style>
-    .movie {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    .movie:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .movie img {
-      width: 150px;
-      height: 200px;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  <title>Thriller Movies</title>
 </head>
 <body>
-  <h1>Main Page</h1>
-  <div id="movies"></div>
+  <div id="thrillerMoviesContainer">
+    <!-- Movies will be dynamically rendered here -->
+  </div>
 
   <script>
-    // Example movie data
     const movies = [
-      { thriller_id: 1, name: "Inception", image: "https://via.placeholder.com/150x200?text=Inception" },
-      { thriller_id: 2, name: "Interstellar", image: "https://via.placeholder.com/150x200?text=Interstellar" },
-      { thriller_id: 3, name: "Avatar", image: "https://via.placeholder.com/150x200?text=Avatar" }
+      { id: 1, name: "Inception", image: "https://via.placeholder.com/300x400?text=Inception" },
+      { id: 2, name: "Interstellar", image: "https://via.placeholder.com/300x400?text=Interstellar" },
+      { id: 3, name: "Avatar", image: "https://via.placeholder.com/300x400?text=Avatar" }
     ];
 
-    // Render movies dynamically
-    const moviesContainer = document.getElementById("movies");
-    movies.forEach((movie) => {
-      const movieDiv = document.createElement("div");
-      movieDiv.className = "movie";
-      movieDiv.innerHTML = `
-        <img src="${movie.image}" alt="${movie.name}" />
-        <h3>${movie.name}</h3>
+    const thrillerMoviesContainer = document.getElementById("thrillerMoviesContainer");
+
+    // Render movies
+    movies.forEach(movie => {
+      thrillerMoviesContainer.innerHTML += `
+        <div class="movie-container" style="margin: 20px; display: inline-block;">
+          <img src="${movie.image}" alt="${movie.name}" style="width: 200px; cursor: pointer;" onclick="navigateToDetails(${movie.thriller_id})">
+          <p>${movie.name}</p>
+        </div>
       `;
-      movieDiv.onclick = () => {
-        // Navigate to the next page with movie ID in URL
-        window.location.href = `summa2.html?id=${movie.thriller_id}`;
-      };
-      moviesContainer.appendChild(movieDiv);
     });
+
+    // Navigate to the details page with thriller_id as a URL parameter
+    function navigateToDetails(thrillerId) {
+      window.location.href = `summa2.html?thriller_id=${thrillerId}`;
+    }
   </script>
 </body>
 </html>
