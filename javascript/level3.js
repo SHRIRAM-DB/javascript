@@ -706,7 +706,7 @@ console.log("-----------------------------------------39------------------------
 
 function lcm(a,b){
 
-  let num=a*b;
+  num=a*b;
   for(i=1;i<num;i++){
     if(i%a==0 && i%b==0){
        break;
@@ -719,8 +719,7 @@ function lcm(a,b){
 console.log("-------------------------------------------------40---------------------------------------------");
 
 
-  let n=4;
-  let m=n;
+ n=4;
   for(i=1;i<=n;i++){
     let str="";
     let gap="";
@@ -739,6 +738,262 @@ console.log("-------------------------------------------------40----------------
   }
 
 console.log("---------------------------------------------------41-----------------------------------------");
+
+
+//Write code to implement the fibonacci sequence.
+
+
+ n=8;
+
+if(n==1){
+  console.log("0")
+  return;
+}
+else if(n==2){
+  console.log("0, 1")
+  return;
+}
+
+ output="0, 1"
+ pterm=0;
+ ppterm=1;
+for(i=3;i<=n;i++){
+  currentterm=pterm+ppterm
+  output=output+", "+currentterm;
+  pterm=currentterm;
+  ppterm=pterm;
+  
+}
+console.log(output)
+
+
+console.log("--------------------------------------------------42-----------------------------------------");
+
+ n=5;
+ str=""
+
+for(i=1;i<=n;i++){
+  if(i%2==0){
+    str+="# ";
+  }
+  else{
+    str+=i+" "
+  }
+
+}
+  console.log(str)
+
+  console.log("----------------------------------------------------43--------------------------------------");
+  
+  count=1;
+  row=6;
+  for(i=1;i<=row;i++){
+    let str=""
+    for(j=1;j<=i;j++){
+        if(count>=11){
+            str+=count+" ";
+            count++
+        }else{
+      str+=count+"  ";
+      count++;
+    }
+    }
+    console.log(str)
+  }
+
+
+console.log("-----------------------------------------44----------------------------------------------------");
+
+
+n=4;
+
+for(i=1;i<=n;i++){
+    let str="";
+    for(j=1;j<=i;j++){
+        if(j%2==0){
+            str+="0"+" ";
+        }
+        else{
+            str+="1"+" ";
+        }
+    }
+    console.log(str)
+}
+
+
+console.log("--------------------------------------------45------------------------------------------------");
+
+
+
+
+
+ n=4;
+ m=n;
+for(i=1;i<=n;i++){
+  let str="";
+  let gap="";
+  for(j=1;j<=i;j++){
+    str+=j+" "
+  }
+  for(k=n-i;k>0;k--){
+    gap+=" "
+  }
+  console.log(gap+str)
+}
+
+
+ o=n;
+for(i=1;i<=n;i++){
+  let str="";
+  let gap="";
+  for(j=1;j<=m-1;j++){
+    str+=j+" ";
+  }
+  for(k=1;k<=i;k++){
+    gap+=" "
+  }
+  console.log(gap+str)
+  m--
+}
+
+console.log("--------------------------------------------------------46----------------------------------------");
+
+ name="shriram";
+
+ str=name.split("");
+ string="";
+
+for(i=str.length-1;i>=0;i--){
+  string+=str[i];
+}
+
+console.log(string)
+
+console.log("------------------------------------------47------------------------------------------------");
+
+n=4;
+
+for(i=1;i<=n;i++){
+    let str="";
+    for(j=1;j<=n;j++){
+    if(i%2==0){
+        str+="# "
+    }
+    else{
+        str+="* "
+    }
+   
+    }
+     console.log(str)
+}
+
+
+console.log("---------------------------------------------------------------48---------------------------------------");
+
+
+
+ number=36;
+ sqrt_root=number**0.5
+console.log(sqrt_root)
+
+
+console.log("-----------------------------------------------------49-------------------------------------------------")
+
+ str = "abcabcbb";
+ split=str.split("");
+
+repeat=[... new Set(split)];
+
+ count=0;
+for(i=0;i<repeat.length;i++){
+    count++;
+}
+console.log(count)
+
+
+console.log("-----------------------------------------------------50--------------------------------------------------------");
+
+
+ arr = ["M 3", "J 1", "T 2"]
+ sum=0;
+for(i=0;i<arr.length;i++){
+  str=arr[i].split(" ");
+  product=str[0];
+  price=Number(str[1]);
+
+  if (product[0]=="M") {
+    product=500;
+  }
+  else if(product[0]=="J"){
+    product=3000;
+  }
+  else if(product[0]=="T"){
+    product=1500;
+  }
+  else if(product[0]=="P"){
+    product=10;
+  }
+  
+  sum+=product*price;
+  
+  
+}
+console.log(sum)
+
+
+console.log("-------------------------------51-------------------------------------------------------");
+
+ str="teena";
+ count=0;
+ list=str.split("");
+ remove=[...new Set(list)]
+for(i=0;i<remove.length;i++){
+   if(remove[i]=== 'a'||remove[i]==='e'|| remove[i]==='i'|| remove[i]==='o'|| remove[i]==='u'|| remove[i]==='A'|| remove[i]==='E'||remove[i]==='I'||remove[i]==='O'|| remove[i]==='U'){
+     count++;
+   }
+}
+console.log(count);
+
+console.log("-----------------------------------------------------------------------52--------------------------------------");
+
+
+
+//hi rammya i would like to meet you;
+
+ st="Hi Rammiya i would Like to Meet You";
+
+ num=st.split(" ");
+ word=[];
+
+
+for(let code of num){
+  if(code!==code.toLowerCase() && code!==code.toUpperCase()){
+    word.push(code);
+  }
+}
+console.log(word)
+
+console.log("-------------------------------------------------------------------------53------------------------");
+
+function countDistinctVowels(str) {
+  const vowels = "aeiou";
+  let distinctVowels = "";
+
+  for (let char of str.toLowerCase()) { // Convert to lowercase to handle uppercase letters
+    if (vowels.includes(char) && !distinctVowels.includes(char)) {
+      distinctVowels += char;
+    }
+  }
+
+  return distinctVowels.length;
+}
+
+console.log(countDistinctVowels("shriram")); // Output: 2 (for "i" and "a")
+
+
+console.log("--------------------------------------------------------------54---------------------------------------");
+
+
 
 
 

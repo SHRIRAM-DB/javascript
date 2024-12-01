@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+    .movie {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .movie img {
+      width: 150px;
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Main Page</h1>
+  <div id="movies"></div>
+
+  <script>
+    // Example movie data
+    const movies = [
+      { thriller_id: 1, name: "Inception", image: "https://via.placeholder.com/150x200?text=Inception" },
+      { thriller_id: 2, name: "Interstellar", image: "https://via.placeholder.com/150x200?text=Interstellar" },
+      { thriller_id: 3, name: "Avatar", image: "https://via.placeholder.com/150x200?text=Avatar" }
+    ];
+
+    // Render movies dynamically
+    const moviesContainer = document.getElementById("movies");
+    movies.forEach((movie) => {
+      const movieDiv = document.createElement("div");
+      movieDiv.className = "movie";
+      movieDiv.innerHTML = `
+        <img src="${movie.image}" alt="${movie.name}" />
+        <h3>${movie.name}</h3>
+      `;
+      movieDiv.onclick = () => {
+        // Navigate to the next page with movie ID in URL
+        window.location.href = `summa2.html?id=${movie.thriller_id}`;
+      };
+      moviesContainer.appendChild(movieDiv);
+    });
+  </script>
+</body>
+</html>
