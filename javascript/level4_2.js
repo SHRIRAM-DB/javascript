@@ -23,8 +23,5 @@ let arr=["JAN-09-2015", "FEB-01-2024", "OCT-10-1987", "MAR-14-2000"];
 
 for(i=0;i<arr.length;i++){
     s=arr[i].split(", ");
-    console.log(s);
-    
-    console.log(s);
+    console.log(m);
 }
-

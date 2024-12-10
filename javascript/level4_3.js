@@ -24,7 +24,6 @@ for(i=1;i<=n;i++) {
   let str=""
   let st=""
   let gap=""
-  let ga=" "
   for(j=1;j<=i;j++){
     str+=i+" "
   }
