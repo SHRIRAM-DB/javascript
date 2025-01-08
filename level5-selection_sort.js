@@ -1,6 +1,4 @@
-
-
-function sectionsort(arr){
+function selectionsort(arr){
 let n= arr.length;
 for(let i=0;i<n;i++){
     let min=i;
@@ -15,7 +13,7 @@ for(let i=0;i<n;i++){
 }
 console.log(arr);
 }
-// sectionsort([{
+// selectionsort([{
 //     "name": "shriram",
 //     "age": 18,
 //     "id": 1
@@ -32,5 +30,8 @@ console.log(arr);
     
 // }])
 
-sectionsort([2,5,1,3,4])
-sectionsort(["orange","apple","mango"])
+selectionsort([2,5,1,3,4])
+selectionsort(["orange","apple","mango"])
+
+
+
