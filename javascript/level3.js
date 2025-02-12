@@ -1,5 +1,5 @@
-a=5;
-b=45;
+a=15;
+b=20;
 let num=a*b;
 let sum=1;
 for(i=1;i<=num;i++){
@@ -633,7 +633,7 @@ console.log("-----------------------------------------------------36------------
 
 arr=["zero ","one ","two ","three ","four ","five ","six ","seven ","eight ","nine "]
 
-n=798793874883;
+n=123;
 total=0
 sum=0
 str="";
@@ -694,6 +694,7 @@ console.log("---------------------------------------------38--------------------
  off=length.length/2;
  firstoff=square.toString().slice(0,off)
  secondoff=square.toString().slice(off)
+ console.log(off)
  answer=Number(firstoff)+Number(secondoff);
 if(n==answer){
   console.log("Kaprekar Numbers")
@@ -822,10 +823,6 @@ for(i=1;i<=n;i++){
 
 
 console.log("--------------------------------------------45------------------------------------------------");
-
-
-
-
 
  n=4;
  m=n;
