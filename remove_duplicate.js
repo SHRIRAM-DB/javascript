@@ -10,9 +10,10 @@ for(i=0;i<arr.length;i++){
         }
     }
     if(!isduplicate){
-       array.push(arr[i])
+       array.push(arr[i])   
     }
 }
+console.log(array)
 
 arr_2=[3,6,2,6];
 for(i=0;i<arr_2.length;i++){

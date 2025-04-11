@@ -3,54 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Details</title>
-  <style>
-    .details-container {
-      text-align: center;
-      margin: 50px auto;
-      max-width: 600px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .details-container img {
-      width: 300px;
-      height: 400px;
-    }
-  </style>
+  <title>Document</title>
 </head>
 <body>
-  <div id="movieDetails" class="details-container">
-    <h1>Loading...</h1>
-  </div>
+<input type="text" autofocus>
+<input type="text">
 
-  <script>
-    const movies = [
-      { thriller_id: 1, name: "Inception", image: "https://via.placeholder.com/300x400?text=Inception", description: "A mind-bending thriller." },
-      { thriller_id: 2, name: "Interstellar", image: "https://via.placeholder.com/300x400?text=Interstellar", description: "A journey to the stars." },
-      { thriller_id: 3, name: "Avatar", image: "https://via.placeholder.com/300x400?text=Avatar", description: "An epic on another planet." }
-    ];
+<form action="upload.php" method="post" enctype="multipart/form-data">
 
-    // Get thriller_id from URL
-    const params = new URLSearchParams(window.location.search);
-    const thrillerId = parseInt(params.get("thriller_id"));
+  <input type="file" name="userfile">
 
-    // Find the movie by thriller_id
-    const movie = movies.find(m => m.thriller_id === thrillerId);
+</form>
 
-    // Display movie details
-    const movieDetails = document.getElementById("movieDetails");
-    if (movie) {
-      movieDetails.innerHTML = `
-        <h1>${movie.name}</h1>
-        <img src="${movie.image}" alt="${movie.name}" />
-        <p>${movie.description}</p>
-        <button onclick="window.history.back()">Go Back</button>
-      `;
-    } else {
-      movieDetails.innerHTML = `<h1>Movie not found!</h1>`;
-    }
-  </script>
+<select name="" id=""> 
+  <option value="">Tata</option>
+  <option value="">lambogini</option>
+</select>
+
+<p contenteditable="true">shriram</p>
+
 </body>
 </html>

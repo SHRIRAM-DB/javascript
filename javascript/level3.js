@@ -657,7 +657,7 @@ while(tot!==0){
 
 console.log("---------------------------------------------------------------37-----------------------------------");
 
-k=153;
+k=121;
 number=k.toString().split("").map(Number)
 
 n=k;
@@ -690,12 +690,17 @@ console.log("---------------------------------------------38--------------------
  n=999;
 
  square=Math.pow(n,2)
+ console.log(square)
  length=square.toString().split("").map(Number)
+ console.log(length)
  off=length.length/2;
- firstoff=square.toString().slice(0,off)
- secondoff=square.toString().slice(off)
  console.log(off)
+ firstoff=square.toString().slice(0,off)
+ console.log(firstoff)
+ secondoff=square.toString().slice(off)
+ console.log(secondoff)
  answer=Number(firstoff)+Number(secondoff);
+ console.log(answer)
 if(n==answer){
   console.log("Kaprekar Numbers")
 }
